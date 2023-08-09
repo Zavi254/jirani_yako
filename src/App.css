@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: rounded;
+  src: url(./fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf);
+}
+@font-face {
+  font-family: display;
+  src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+.login_section {
+  min-height: 100vh;
+}
+
+.desktop_image {
+  display: block;
+  border-radius: 24px;
+  height: 90vh;
+  max-width: 100%;
+  
+}
+.form_section #welcome_back {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.24px;
+  color: #0c1421;
+  font-family: rounded;
+}
+.form_section .sign_up_text {
+  color: #313957;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.15px;
+  font-size: 1rem;
+  font-family: display;
+}
+.mobile_image {
+  display: none;
+}
+.sign_in_form {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.sign_in_form a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1e4ae9;
+}
+.sign_in_form button {
+  border-radius: 12px;
+  background-color: #162d3a;
+  color: #fff;
+  border: none;
+  padding: 12px 0px;
+}
+.third_party_login button {
+  border-radius: 12px;
+  border: none;
+  padding: 8px 9px;
+  background: #f3f9fa;
+  color: #313957;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.sign_in_border {
+  border: 1px solid #cfdfe2;
+  height: 1px;
+  width: 31%;
+}
+.sign_in_text {
+  margin-top: 12px;
+  margin-right: 14px;
+  margin-left: 14px;
+  font-size: 12px;
+  color: #294957;
+}
+.sign_in_form input {
+  border-radius: 8px;
+  border: 1px solid #d4d7e3;
+  background: #f3f7fb;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #8897ad;
+  font-size: 14px;
+}
+.sign_in_form input:focus {
+  outline-color: #d4d7e3;
+}
+.sign_in_form label {
+  color: #0c1421;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0.14px;
+  font-size: 14px;
+}
+.sign_up_text a {
+  text-decoration: none;
+}
+.footer_text {
+  color: #959cb6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop_image {
+    display: none;
+  }
+  .mobile_image {
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .third_party_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .third_party_login button {
+    width: 40%;
+  }
+  /* stylesheet for hiding the sign in text that is visible on the desktop and not on the phone */
+  .sign_hide_mobile {
+    display: none;
+  }
+}
