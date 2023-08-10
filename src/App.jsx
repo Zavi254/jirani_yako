@@ -9,7 +9,11 @@ import Login from "./pages/Login";
 import "./App.css";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="login" element={<Login />} />)
+  createRoutesFromElements(
+    <Route path="/" element={<Login />}>
+      <Route index path="login" element={<Login />} />
+    </Route>
+  )
 );
 
 const App = ({ routes }) => {
