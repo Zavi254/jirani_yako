@@ -125,7 +125,7 @@ nav {
   border-radius: 7px;
 }
 #hidden_nav {
-  width: 65%;
+  width: 70%;
   font-family: rounded;
   font-weight: 500;
   font-size: 1rem;
@@ -137,7 +137,7 @@ nav {
   margin-right: 10px;
 }
 .menu {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   align-items: center;
   font-weight: 700;
 }
@@ -173,8 +173,33 @@ nav {
 }
 .offcanvas-header {
   border-bottom: 1px solid gray;
+  position: relative;
 }
-
+.br{
+  border: 2px solid red;
+}
+.hidden_dark_theme_icon{
+  background-color: lightgray;
+  position: absolute;
+  right: 5%;
+  top: 12%;
+  width: 66px;
+  height: 26px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 12px 5px;
+}
+.hidden_theme_toggler{
+  /* background: green; */
+  /* background-color: rgba(6, 188, 6, 0.9); */
+  width:18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+}
 @media only screen and (max-width: 768px) {
   .desktop_image {
     display: none;

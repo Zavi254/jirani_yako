@@ -1,7 +1,7 @@
-import { BiHomeAlt, BiCategory } from "react-icons/bi";
+import { BiHomeAlt, BiCategory, BiMoon } from "react-icons/bi";
 import { GoStack } from "react-icons/go";
 import { AiOutlineHeart } from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
+import { BsPerson, BsBrightnessHigh } from "react-icons/bs";
 import { FiLogOut, FiEdit } from "react-icons/fi";
 import { FaGreaterThan } from "react-icons/fa";
 
@@ -9,19 +9,21 @@ const LeftCanvas = () => {
   return (
     <div className="offcanvas offcanvas-start" id="hidden_nav">
       <div className="offcanvas-header">
-        <h1 className="offcanvas-title">
-          <div className="hidden_nav_contact_info">
-            <img
-              src="https://res.cloudinary.com/dogmqg8to/image/upload/v1691686323/pexels-pixabay-220453_odprff.jpg"
-              alt=""
-              className="hidden_nav_image"
-            />
-            <FiEdit className="hidden_nav_edit_icon" />
-            <p className="hidden_nav_name mt-3">John Doe</p>
-            <p className="hidden_nav_email">example@gmail.com</p>
-          </div>
-          <div></div>
-        </h1>
+        <div className="hidden_nav_contact_info">
+          <img
+            src="https://res.cloudinary.com/dogmqg8to/image/upload/v1691686323/pexels-pixabay-220453_odprff.jpg"
+            alt=""
+            className="hidden_nav_image"
+          />
+          <FiEdit className="hidden_nav_edit_icon" />
+          <p className="hidden_nav_name mt-3">John Doe</p>
+          <p className="hidden_nav_email">example@gmail.com</p>
+        </div>
+        <div className="hidden_dark_theme_icon">
+          <BiMoon />
+          <BsBrightnessHigh />
+          <div className="hidden_theme_toggler"></div>
+        </div>
       </div>
       <div className="offcanvas-body">
         <div className="menu d-flex justify-content-between">
