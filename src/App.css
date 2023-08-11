@@ -17,7 +17,6 @@
   border-radius: 24px;
   height: 90vh;
   max-width: 100%;
-  
 }
 .form_section #welcome_back {
   font-size: 24px;
@@ -108,6 +107,72 @@
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.14px;
+}
+
+/* Navbar */
+nav {
+  font-family: rounded;
+}
+.left_toggle_icon {
+  font-size: 1.9rem;
+  margin-left: 10px;
+}
+.contact_image {
+  width: 35px;
+  height: 35px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#hidden_nav {
+  width: 65%;
+  font-family: rounded;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+}
+.hidden_nav_icon {
+  font-size: 1.5rem;
+  color: gray;
+  margin-right: 10px;
+}
+.menu {
+  margin-bottom: 33px;
+  align-items: center;
+  font-weight: 700;
+}
+.hidden_nav_email {
+  font-size: 0.9rem;
+  color: gray;
+}
+.hidden_nav_image {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hidden_nav_edit_icon {
+  font-size: 1.8rem;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 22%;
+  right: 46%;
+  border: 2px solid #fff;
+}
+.hidden_nav_contact_info {
+  position: relative;
+  font-weight: bold;
+}
+.greater_icon {
+  font-size: 0.7rem;
+  color: gray;
+}
+.offcanvas-header {
+  border-bottom: 1px solid gray;
 }
 
 @media only screen and (max-width: 768px) {

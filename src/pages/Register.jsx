@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
-const Login = () => {
+const Register = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
@@ -30,8 +30,18 @@ const Login = () => {
           </span>
         </h2>
 
-        <p className="sign_up_text">Sign in to Continue</p>
+        <p className="sign_up_text">Register to Continue</p>
         <form className="sign_in_form" onSubmit={handleSubmit(onSubmit)}>
+          <label htmlFor="email">Username</label> <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            className="p-2"
+            placeholder="Enter username"
+            {...register("username")}
+          />
+          <br />
           <label htmlFor="email">Email</label> <br />
           <input
             type="email"
@@ -52,16 +62,13 @@ const Login = () => {
             placeholder="At least 8 characters"
             {...register("password")}
           />
-          <Link className="d-flex justify-content-end mt-1">
-            Forgot Password?
-          </Link>
           <button type="submit" className="w-100  mt-2">
-            Login
+            Sign up
           </button>
         </form>
         <div className="d-flex justify-content-center align-items-center">
           <div className="sign_in_border"></div>
-          <p className="sign_in_text">Or sign in with</p>
+          <p className="sign_in_text">Or sign up with</p>
           <div className="sign_in_border"></div>
         </div>
         <div className="third_party_login d-lg-flex flex-lg-column mb-2">
@@ -73,7 +80,7 @@ const Login = () => {
               />
             </span>
             <span className="w-50">
-              <span className="sign_hide_mobile">Log in with </span>Google
+              <span className="sign_hide_mobile">Sign up with </span>Google
             </span>
           </button>
           <button className="mt-3 mb-3 d-flex justify-content-around">
@@ -84,12 +91,12 @@ const Login = () => {
               />
             </span>
             <span className="w-50">
-              <span className="sign_hide_mobile">Log in with </span>Facebook
+              <span className="sign_hide_mobile">Sign up with </span>Facebook
             </span>
           </button>
         </div>
         <p className="text-center sign_up_text">
-          Don't you have an account? <Link to={"/register"}>Sign up</Link>
+          Already have an account? <Link to={"/login"}>Login</Link>
         </p>
         <p className="text-center footer_text">© 2023 ALL RIGHTS RESERVED</p>
       </div>
@@ -97,4 +104,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
