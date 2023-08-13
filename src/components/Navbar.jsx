@@ -34,8 +34,8 @@ const Navbar = () => {
         />
         <li>SELL FASTER, BUY SMARTER</li>
         <li>
-          <Link to={"/login"}>Log In</Link> |{" "}
-          <Link to={"/register"}>Register</Link>{" "}
+          <Link to={"/users/login"}>Log In</Link> |{" "}
+          <Link to={"/users/register"}>Register</Link>{" "}
         </li>
         <button className="btn btn-primary">SELL</button>
       </ul>
