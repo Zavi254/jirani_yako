@@ -277,8 +277,45 @@ nav {
   background-size: cover;
   background-position: center center;
 }
+.mobile_search_input{
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
+  .mobile_middle_input input {
+    background: lightgray;
+    font-family: display;
+    border-radius: 20px;
+    margin-left: 50px;
+  }
+  .mobile_search_middle svg {
+    font-size: 1.4rem;
+    margin-left: 15px;
+  }
+  .mobile_middle_input .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+    background-color: lightgray;
+  }
+  .mobile_search_input{
+    display: flex;
+    justify-content: space-around;
+    font-family: display;
+  }
+   .mobile_middle_input div {
+    display: none;
+  }
+
+  .mobile_search_icon_container {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+  } 
+  .mobile_search_input .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+  } 
   .banner_section {
     display: none;
   }

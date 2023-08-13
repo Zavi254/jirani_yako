@@ -96,7 +96,7 @@ const Register = () => {
           </button>
         </div>
         <p className="text-center sign_up_text">
-          Already have an account? <Link to={"/login"}>Login</Link>
+          Already have an account? <Link to={"/users/login"}>Login</Link>
         </p>
         <p className="text-center footer_text">© 2023 ALL RIGHTS RESERVED</p>
       </div>
