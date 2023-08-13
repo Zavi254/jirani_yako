@@ -112,9 +112,30 @@
 /* Navbar */
 nav {
   font-family: rounded;
+  background-color: #f58634;
+  color: #f3f7fb;
+  height: 70px;
+}
+.profile_icon{
+  border: 2px solid red;
+  font-size: 2rem;
+  border-radius: 50%;
+  
+}
+#desktop_navbar {
+  margin-top: 0;
+}
+#desktop_navbar a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#desktop_navbar button {
+  width: 120px;
 }
 .left_toggle_icon {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   margin-left: 10px;
 }
 .contact_image {
@@ -175,10 +196,10 @@ nav {
   border-bottom: 1px solid gray;
   position: relative;
 }
-.br{
+.br {
   border: 2px solid red;
 }
-.hidden_dark_theme_icon{
+.hidden_dark_theme_icon {
   background-color: lightgray;
   position: absolute;
   right: 5%;
@@ -192,18 +213,79 @@ nav {
   font-size: 1.1rem;
   padding: 12px 5px;
 }
-.hidden_theme_toggler{
+.hidden_theme_toggler {
   /* background: green; */
   /* background-color: rgba(6, 188, 6, 0.9); */
-  width:18px;
+  width: 18px;
   height: 18px;
   border-radius: 50%;
   position: absolute;
 }
-@media only screen and (max-width: 768px) {
+#hidden_nav {
+  display: none;
+}
+#mobile_navbar {
+  display: none;
+}
+.logo_image {
+  object-fit: cover;
+  width: 8%;
+  margin-left: 10px;
+}
+.search {
+  width: 25%;
+  position: relative;
+}
+.search input {
+  text-indent: 25px;
+}
+.search input:focus {
+  box-shadow: none;
+}
+.search .fa-search {
+  position: absolute;
+  top: -5px;
+  height: 50px;
+  right: 5px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.dropdown-content {
+  top: 38px;
+  position: absolute;
+  background: #f6f6f6;
+  z-index: 1;
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+}
+.dropdown-content a {
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  padding: 12px 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  #hidden_nav {
+    display: block;
+  }
+  #mobile_navbar {
+    display: flex;
+  }
   .desktop_image {
     display: none;
   }
+  #desktop_navbar {
+    display: none;
+    height: 20vh;
+  }
+
   .mobile_image {
     display: block;
     padding: 10px;
@@ -222,3 +304,6 @@ nav {
     display: none;
   }
 }
+/* @media only screen and (max-width: 768px) {
+  
+} */
