@@ -6,13 +6,10 @@ import { useNavigate } from "react-router-dom";
 import MobileCategorySection from "../components/MobileCategorySection";
 import useFetch from "../components/useFetch";
 
-const categoryUrl = import.meta.env.VITE_REACT_APP_API_URL;
+const categoryUrl = import.meta.env.local.VITE_REACT_APP_API_URL;
 
 const Home = () => {
   const navigate = useNavigate();
-
-
-
   const { data: categories, isLoading } = useFetch(
     `${categoryUrl}/categories`
   );
