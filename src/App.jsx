@@ -8,7 +8,7 @@ import SearchMiddle from "./pages/SearchMiddle";
 
 const App = () => {
 
-  const mainUrl = import.meta.env.local.VITE_REACT_APP_API_URL;
+  const mainUrl = import.meta.env.VITE_REACT_APP_API_URL;
 
   useEffect(() => {
     // Define a function that makes the API request
